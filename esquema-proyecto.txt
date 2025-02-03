@@ -1,0 +1,87 @@
+/mi-proyecto
+│── /public                  # Archivos estáticos
+│   ├── index.html           # Archivo principal HTML
+│   ├── favicon.ico          # Ícono del sitio
+│   ├── manifest.json        # Configuración de PWA
+│   └── assets/              # Imágenes, fuentes y otros archivos estáticos
+│
+│── /src                     # Código fuente del proyecto
+│   ├── /api                 # Llamadas a la API
+│   │   ├── httpClient.js     # Configuración del cliente HTTP
+│   │   ├── authService.js    # Servicios de autenticación
+│   │   └── dataService.js    # Lógica de obtención de datos
+│   │
+│   ├── /components          # Componentes reutilizables
+│   │   ├── Button.jsx       
+│   │   ├── InputField.jsx   
+│   │   ├── Modal.jsx       
+│   │   └── index.js         
+│   │
+│   ├── /features            # Módulos de funcionalidad independientes
+│   │   ├── /Auth            # Funcionalidad de autenticación
+│   │   │   ├── Login.jsx
+│   │   │   ├── Signup.jsx
+│   │   │   ├── authSlice.js # Redux slice (opcional)
+│   │   │   └── index.js
+│   │   ├── /Dashboard       # Panel de control
+│   │   │   ├── Dashboard.jsx
+│   │   │   ├── dashboardSlice.js
+│   │   │   └── index.js
+│   │   └── /Profile         # Perfil de usuario
+│   │       ├── Profile.jsx
+│   │       ├── profileSlice.js
+│   │       └── index.js
+│   │
+│   ├── /hooks               # Hooks personalizados
+│   │   ├── useAuth.js       
+│   │   ├── useFetch.js      
+│   │   └── index.js         
+│   │
+│   ├── /layouts             # Estructuras de página reutilizables
+│   │   ├── MainLayout.jsx   
+│   │   ├── AuthLayout.jsx   
+│   │   └── index.js         
+│   │
+│   ├── /pages               # Páginas principales
+│   │   ├── Home.jsx         
+│   │   ├── About.jsx        
+│   │   ├── NotFound.jsx     
+│   │   └── index.js         
+│   │
+│   ├── /redux               # Configuración global de Redux
+│   │   ├── store.js         
+│   │   ├── rootReducer.js   
+│   │   ├── slices/          
+│   │   └── middlewares/     
+│   │
+│   ├── /routes              # Configuración de rutas
+│   │   ├── AppRoutes.jsx    
+│   │   ├── PrivateRoute.jsx 
+│   │   └── index.js         
+│   │
+│   ├── /styles              # Archivos de estilos globales
+│   │   ├── global.css       
+│   │   ├── variables.css    
+│   │   └── index.js         
+│   │
+│   ├── /utils               # Funciones de utilidad
+│   │   ├── formatDate.js    
+│   │   ├── debounce.js      
+│   │   ├── constants.js     
+│   │   └── index.js         
+│   │
+│   ├── App.jsx              # Componente raíz de la aplicación
+│   ├── index.js             # Punto de entrada principal
+│   ├── main.js              # Configuración adicional (React.StrictMode, etc.)
+│   └── setupTests.js        # Configuración para pruebas
+│
+│── /tests                   # Pruebas unitarias e integración
+│   ├── /components          
+│   ├── /features            
+│   ├── setupTests.js        
+│   └── jest.config.js       
+│
+│── .env                     # Variables de entorno
+│── .gitignore               # Archivos a ignorar en Git
+│── package.json             # Dependencias y scripts
+│── README.md                # Documentación del proyecto
