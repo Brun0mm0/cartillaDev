@@ -1,5 +1,5 @@
 
-const CredencialPage = () => {
+export const CredencialPage = () => {
   return (
     <div>
       <h1>Credencial Page</h1>
@@ -8,4 +8,3 @@ const CredencialPage = () => {
   )
 }
 
-export default CredencialPage

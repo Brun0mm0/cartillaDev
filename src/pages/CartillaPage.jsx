@@ -1,5 +1,5 @@
 
-const CartillaPage = () => {
+export const CartillaPage = () => {
   return (
     <div>
       <h1>Cartilla Page</h1>
@@ -8,4 +8,4 @@ const CartillaPage = () => {
   )
 }
 
-export default CartillaPage
+

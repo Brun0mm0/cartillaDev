@@ -85,3 +85,5 @@
 │── .gitignore               # Archivos a ignorar en Git
 │── package.json             # Dependencias y scripts
 │── README.md                # Documentación del proyecto
+
+E:\SQL_ToRestore\PORTAL\CartillaS300Copy.bak
