@@ -1,4 +1,5 @@
-import { TextField, Paper } from '@mui/material'
+import { TextField, Stack, IconButton, Icon } from '@mui/material'
+import SearchIcon from '@mui/icons-material/Search';
 import { useForm } from 'react-hook-form'
 
 const InputComponent = () => {
@@ -10,20 +11,24 @@ const InputComponent = () => {
     }
 
   return (
-    <Paper elevation={1}>
-        <form onSubmit={handleSubmit(onSubmit)}>
-        <TextField 
-            id="numero de dni" 
-            label="numero de dni" 
-            variant="outlined"
-            fullWidth
-            margin='normal'
-            {...register('dni', {required: "DNI requerido"})}
-            error={!!errors.dni}
-            helperText={errors.dni?.message}
-            />
-        </form>
-    </Paper>
+    <form onSubmit={handleSubmit(onSubmit)}>
+      <Stack spacing={2} direction="row" margin={2}>
+          <TextField 
+              color='primary'
+              id="numero de dni" 
+              label="numero de dni" 
+              variant="outlined"
+              fullWidth
+              margin='normal'
+              {...register('dni', {required: "DNI requerido"})}
+              error={!!errors.dni}
+              helperText={errors.dni?.message}
+              />
+              <IconButton type="submit" color='primary'>
+                <SearchIcon overlap="circular"/>
+              </IconButton>
+      </Stack>
+    </form>
   )
 }
 

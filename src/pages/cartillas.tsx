@@ -21,7 +21,7 @@ const CartillasPage = () => {
           <InputComponent />
          
         </Box>
-        <Box sx={{flex:1}}>
+        <Box sx={{flex:.5}}>
             <Typography variant="h4">Cartillas</Typography>
         </Box>
     </Stack>
