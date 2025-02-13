@@ -1,6 +1,7 @@
 import * as React from 'react';
 import DashboardIcon from '@mui/icons-material/Dashboard';
-import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+import MedicalServicesIcon from '@mui/icons-material/MedicalServices';
+import BadgeIcon from '@mui/icons-material/Badge';
 import { ReactRouterAppProvider } from '@toolpad/core/react-router';
 import { Outlet } from 'react-router';
 import type { Navigation } from '@toolpad/core';
@@ -11,13 +12,18 @@ const NAVIGATION: Navigation = [
     title: 'Apps',
   },
   {
-    title: 'Cartillas',
+    title: 'Apps',
     icon: <DashboardIcon />,
   },
   {
-    segment: 'orders',
+    segment: 'credenciales',
     title: 'Credenciales',
-    icon: <ShoppingCartIcon />,
+    icon: <BadgeIcon />,
+  },
+  {
+    segment: 'cartillas',
+    title: 'Cartillas',
+    icon: <MedicalServicesIcon />,
   },
 ];
 
