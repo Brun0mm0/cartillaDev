@@ -6,25 +6,13 @@ const CartillasPage = () => {
   return (
     <>
     <Box>
-      <Typography variant='h5'>Gestione base de datos de las credenciales</Typography>
+      <Typography variant='h6'>Buscar Afiliado</Typography>
     </Box>
-    <Stack 
-    spacing={2} 
-    direction="row"
-    sx={{
-      flex:1,
-      justifyContent: 'center',
-      // alignItems: 'stretch',
-    }}>
-        <Box sx={{flex:1}}>
+        <Box >
             {/* <Typography variant="h4">Cartillas</Typography> */}
           <InputComponent />
          
         </Box>
-        <Box sx={{flex:.5}}>
-            <Typography variant="h4">Cartillas</Typography>
-        </Box>
-    </Stack>
     </>
   )
 }
